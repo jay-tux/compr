@@ -10,8 +10,9 @@ The names between brackets indicate the directories, Makefile targets and execut
 
 It also indicates the files existing for that encoder (using the same example): `./ex/ex.hpp` (header file), `./ex/ex.cpp` (source file), and `./ex/ex_ex.cpp` (example use).
 
- - Lossless Algorithms  
-   - Shannon-Fano (`sfano`)  
+ - Lossless Algorithms (namespace `jay::compression::lossless`)  
+   - Shannon-Fano (`sfano`, class name: `ShannonFano`)  
    - Huffman  
-     - Normal Huffman (`huffman`)  
-     - Extended Huffman (`exhuff`)
+     - Normal Huffman (`huffman`, class name: `Huffman`)  
+     - Extended Huffman (`exhuff`, class name: `ExtendedHuffman`)  
+   - LZW (`lzw`, class name: `LZW`)  
