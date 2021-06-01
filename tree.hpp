@@ -9,6 +9,10 @@ namespace jay::compression {
       bintree(T value) : value{value}, left{nullptr}, right{nullptr} {}
 
       template <class T>
+      bintree(T value, bintree<T> *left, bintree<T> *right) :
+        value{value}, left{left}, right{right} {}
+
+      template <class T>
       bintree(bintree<T> &other) { *this = other; }
 
       template <class T>
