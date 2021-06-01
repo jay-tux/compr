@@ -44,7 +44,7 @@ bintree<char> *sfano_div(std::vector<pair_t> &v, int begin, int end, int len) {
 
 void genTable(sfano::table &table, bintree<char> *tree, std::string prefix = "") {
   if(tree->value != '\0') {
-    table[tree->value] = prefix;
+    table[tree->value] = (prefix == "") ? "0" : prefix;
   }
   else {
     genTable(table, tree->left, prefix + "0");

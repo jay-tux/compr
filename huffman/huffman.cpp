@@ -10,7 +10,7 @@ typedef std::pair<bintree<char> *, int> pair_t;
 
 void genTable(huff::table &table, bintree<char> *tree, std::string prefix = "") {
   if(tree->value != '\0') {
-    table[tree->value] = prefix;
+    table[tree->value] = (prefix == "") ? "0" : prefix;
   }
   else {
     genTable(table, tree->left, prefix + "0");
