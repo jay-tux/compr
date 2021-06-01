@@ -14,5 +14,5 @@ int main() {
   int len = stream.size();
   std::cout << msg << std::endl << Huffman::decode(stream, table) << std::endl;
 
-  std::cout << "Compression ratio: " << (float)len / msg.length() << std::endl;
+  std::cout << "Compression ratio: " << (float)len / msg.length() / 8 << std::endl;
 }
