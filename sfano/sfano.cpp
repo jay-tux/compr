@@ -97,7 +97,7 @@ sfano::stream &sfano::encode(sfano::stream &target, std::string in, sfano::table
 std::string sfano::decode(sfano::stream &input, sfano::table &table) {
   //invert Table
   std::string s;
-  std::map<std::string, char> invmap;
+  sfano::invtable invmap;
   for(auto pair : table) { invmap[pair.second] = pair.first; }
 
 #ifdef DEBUG
