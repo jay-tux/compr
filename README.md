@@ -16,3 +16,6 @@ It also indicates the files existing for that encoder (using the same example): 
      - Normal Huffman (`huffman`, class name: `Huffman`)  
      - Extended Huffman (`exhuff`, class name: `ExtendedHuffman`)  
    - LZW (`lzw`, class name: `LZW`)  
+   - Arithmetic Coders  
+     - Binary Arithmetic Coder (`bac`, class name: `BinaryArithmeticCoder`)  
+     ![Warning](https://img.shields.io/badge/_-Warning:-red) due to floating-point precision, message length is limited.  
